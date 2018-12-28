@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/lightgallery.css">
 
 	<!-- Facebook meta tags -->
 	<meta property="og:type" content="HTML5">
@@ -253,9 +254,20 @@
 					<article class="column col5">
 						<h4 class="col_tit">Title</h4>
 						<p class="col_desc">웹 반응형 사이트 영역의 제목 설명 부분입니다.</p>
-						<!-- -->
-
-						<!--// -->
+						<!--lightbox -->
+							<div class="lightbox square clearfix">
+								<a href="img/img01.jpg"><img src="img/img01_s.jpg" alt="이미지"></a>
+								<a href="img/img02.jpg"><img src="img/img02_s.jpg" alt="이미지"></a>
+								<a href="img/img04.jpg"><img src="img/img03_s.jpg" alt="이미지"></a>
+								<a href="img/img04.jpg"><img src="img/img04_s.jpg" alt="이미지"></a>
+								<a href="img/img05.jpg"><img src="img/img05_s.jpg" alt="이미지"></a>
+								<a href="img/img06.jpg"><img src="img/img06_s.jpg" alt="이미지"></a>
+								<a href="img/img07.jpg"><img src="img/img07_s.jpg" alt="이미지"></a>
+								<a href="img/img08.jpg"><img src="img/img08_s.jpg" alt="이미지"></a>
+								<a href="img/img09.jpg"><img src="img/img09_s.jpg" alt="이미지"></a>
+								<a href="img/img10.jpg"><img src="img/img10_s.jpg" alt="이미지"></a>
+							</div>
+						<!--//lightbox -->
 					</article>
 					<!--//col5-->
 					<article class="column col6">
@@ -312,6 +324,12 @@
 	<!--Script-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/lightgallery.min.js"></script>
+	<script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+
+	<script type="text/javascript">
+    $(".lightbox").lightGallery();
+	</script>
 	<script>
 		$(".slider").slick({
 			dots: true,
